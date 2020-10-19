@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom'
 import { TagRow } from './'
 
 export default function PostGrid({ posts }) {
+    // eslint-disable-next-line no-unused-vars
     const [pageSize, setPageSize] = useState(9)
+    // eslint-disable-next-line no-unused-vars
     const [current, setCurrent] = useState(1)
 
     const paginatedPosts = useMemo(() => {
