@@ -1,0 +1,68 @@
+@import './_variables';
+@import './_navigation';
+@import './_home';
+@import './_post-masonry';
+@import './_masonry-post';
+@import './_tag-row';
+@import './post-grid';
+
+html body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    background-color: #f8f9fa;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: '800vh';
+}
+
+.row {
+    margin: 4em 20px;
+}
+
+.overlay::before {
+    z-index: 1;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+        180deg,
+        transparent 0%,
+        transparent 18%,
+        rgba(0, 0, 0, 8) 99%,
+        rgba(0, 0, 0, 8) 100%
+    );
+}
+
+.main {
+    padding: 2em 0;
+    margin-top: 200px;
+    padding-top: 500px;
+    h1 {
+        width: '100%';
+        color: $text-color;
+        padding: 1.5em 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .main {
+        h1 {
+            margin-block-start: 1.5em;
+            margin-block-end: 1.5em;
+        }
+    }
+}

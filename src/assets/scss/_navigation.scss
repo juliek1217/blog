@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.site-navigation {
+    height: 65px;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    box-shadow: 0 9px 9px -9px rgba(0, 0, 0, 0.13);
+
+    .menu-title {
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+        font-weight: 500;
+        font-family: 'Righteous', cursive;
+    }
+
+    .ion-ios-menu {
+        font-size: 36px;
+        width: 65px;
+        align-items: center;
+        cursor: pointer;
+        display: none;
+    }
+
+    .menu-content-container {
+        display: flex;
+        align-items: center;
+        padding-right: 30px;
+        .ant-avatar {
+            background-color: $text-color;
+        }
+        .menu-avatar-name {
+            font-size: 14px;
+            margin-left: 15px;
+        }
+    }
+
+    ul {
+        height: 100%;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding-inline-start: 0;
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        padding: 0 20px 0 50px;
+
+        a {
+            text-decoration: none;
+            padding: 0 20px 0 20px;
+            font-size: 13px;
+            color: $text-color;
+
+            &:hover {
+                color: $text-link;
+            }
+        }
+    }
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 65px;
+    background-color: #fff;
+    color: #333;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+    z-index: 999;
+}
+
+.header.shadow {
+    // box-shadow: 0 9px 9px -9px rgba(0, 0, 0, 0.13);
+}
+
+.header.hidden {
+    transform: translateY(-110%);
+}
+
+.logo {
+    margin: 0 24px;
+    font-size: 28px;
+    //  color: #f59596;
+}
+
+@media screen and (max-width: 900px) {
+    .site-navigation {
+        .menu-content-container {
+            width: 300px;
+            height: calc(100% - 65px);
+            background: white;
+            position: fixed;
+            top: 65px;
+            left: -300px;
+            transition: 300ms ease left;
+            flex-direction: column-reverse;
+            padding: 0;
+            padding-left: 30px;
+
+            a {
+                width: 100%;
+                padding: 0;
+            }
+
+            li {
+                height: 40px;
+                display: flex;
+                align-items: center;
+            }
+
+            ul {
+                flex-direction: column;
+                justify-content: flex-start;
+                padding: 0;
+                padding-top: 10px;
+            }
+
+            ul,
+            li,
+            .menu-avatar-container {
+                width: 100%;
+            }
+
+            .menu-avatar-container {
+                padding-top: 10px;
+            }
+
+            &.active {
+                left: 0px;
+            }
+        }
+        .ion-ios-menu {
+            display: flex;
+        }
+    }
+}
