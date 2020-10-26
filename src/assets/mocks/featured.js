@@ -2,32 +2,31 @@ import moment from 'moment'
 
 export default [
     {
-        title: "Featured!!!",
+        title: 'Featured: Living without wifi for two months #mobilehotspot',
         date: moment().format('MMM, DD, YYYY'),
-        categories: ['Review'],
+        categories: ['Experiment'],
         link: '#',
-        image: 'wifi.jpg'
+        image: 'wifi.jpg',
     },
     {
-        title: "Upgrading website",
+        title: 'Upgrading website',
         date: moment().format('MMM, DD, YYYY'),
         categories: ['Web Dev'],
         link: '#',
-        image: 'umwics1.png'
+        image: 'umwics1.png',
     },
     {
-        title: "$400 VR headset?",
+        title: '$400 VR headset?',
         date: moment().format('MMM, DD, YYYY'),
-        categories: ['Talk'],
+        categories: ['Review'],
         link: '#',
-        image: 'vr1.jpg'
+        image: 'vr1.jpg',
     },
     {
-        title: "Some ideas",
+        title: 'Ecommerce or Community',
         date: moment().format('MMM, DD, YYYY'),
         categories: ['Startup'],
         link: '#',
-        image: 'startup1.jpg'
+        image: 'startup1.jpg',
     },
-
 ]

@@ -2,45 +2,38 @@ import moment from 'moment'
 
 export default [
     {
-        title: "Trending: Living without wifi for two months #mobilehotspot",
+        title: 'Trending: Data Visualization - Finance',
+        date: moment().format('MMM, DD, YYYY'),
+        categories: ['Data Science'],
+        link: '#',
+        image: 'kospi.jpg',
+    },
+    {
+        title: 'Mining Cryptocurrency',
         date: moment().format('MMM, DD, YYYY'),
         categories: ['Review'],
         link: '#',
-        image: 'wifi.jpg'
+        image: 'crypto.jpg',
     },
     {
-        title: "Upgrading website",
-        date: moment().format('MMM, DD, YYYY'),
-        categories: ['Web Dev'],
-        link: '#',
-        image: 'umwics1.png'
-    },
-    {
-        title: "$400 VR headset?",
-        date: moment().format('MMM, DD, YYYY'),
-        categories: ['Talk'],
-        link: '#',
-        image: 'vr1.jpg'
-    },
-    {
-        title: "Some ideas",
+        title: 'Innovative Technologies for Seniors Aging in Place',
         date: moment().format('MMM, DD, YYYY'),
         categories: ['Startup'],
         link: '#',
-        image: 'startup1.jpg'
+        image: 'senior.jpg',
     },
     {
-        title: "Zero to One",
+        title: 'Peter Thiel: Zero to One',
         date: moment().format('MMM, DD, YYYY'),
         categories: ['Book'],
         link: '#',
-        image: 'startup.jpg'
+        image: 'startup.jpg',
     },
     {
-        title: "am I burnt out or am I just lazy? #selfcontrol",
+        title: 'am I burnt out or am I just lazy? #selfcontrol #covid',
         date: moment().format('MMM, DD, YYYY'),
         categories: ['Talk'],
         link: '#',
-        image: 'cat.jpg'
+        image: 'cat.jpg',
     },
 ]

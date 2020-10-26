@@ -24,6 +24,7 @@
         font-size: 36px;
         width: 65px;
         align-items: center;
+        align-content: center;
         cursor: pointer;
         display: none;
     }
@@ -80,10 +81,6 @@
     z-index: 999;
 }
 
-.header.shadow {
-    // box-shadow: 0 9px 9px -9px rgba(0, 0, 0, 0.13);
-}
-
 .header.hidden {
     transform: translateY(-110%);
 }
@@ -111,6 +108,7 @@
             a {
                 width: 100%;
                 padding: 0;
+                padding-top: 10px;
             }
 
             li {

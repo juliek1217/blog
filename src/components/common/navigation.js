@@ -1,6 +1,7 @@
 import { makeStyles } from '@material-ui/core/styles'
 import EmailIcon from '@material-ui/icons/Email'
 import GitHubIcon from '@material-ui/icons/GitHub'
+import MoreHorizIcon from '@material-ui/icons/MoreHoriz'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import ScrollThrottled from './scroll-throttled'
@@ -78,6 +79,14 @@ export default function Navigation({ user }) {
                     <span>
                         <a
                             className={classes.root}
+                            href="mailto: kimj4@myumanitoba.ca"
+                        >
+                            <EmailIcon style={{ fontSize: 25 }} />
+                        </a>
+                    </span>
+                    <span>
+                        <a
+                            className={classes.root}
                             href="https://github.com/juliek1217"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -85,19 +94,13 @@ export default function Navigation({ user }) {
                             <GitHubIcon style={{ fontSize: 22 }} />
                         </a>
                     </span>
-                    <span>
-                        <a
-                            className={classes.root}
-                            href="mailto: kimj4@myumanitoba.ca"
-                        >
-                            <EmailIcon style={{ fontSize: 25 }} />
-                        </a>
-                    </span>
                 </div>
-                <i
-                    className="ionicons icon ion-ios-menu"
-                    onClick={() => setMenuActive(!menuActive)}
-                />
+                <div className="ion-ios-menu">
+                    <MoreHorizIcon
+                        className="ion-ios-menu"
+                        onClick={() => setMenuActive(!menuActive)}
+                    />
+                </div>
             </nav>
         </header>
     )

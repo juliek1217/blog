@@ -1,17 +1,18 @@
 import { Button, Container, Grid, Typography } from '@material-ui/core'
 import Avatar from '@material-ui/core/Avatar'
+import Divider from '@material-ui/core/Divider'
 import { makeStyles } from '@material-ui/core/styles'
 import EmailIcon from '@material-ui/icons/Email'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import React from 'react'
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles((Theme) => ({
     paper: {
-        marginTop: theme.spacing(6),
+        marginTop: Theme.spacing(6),
     },
     heroContent: {
-        padding: theme.spacing(12, 0, 6),
+        padding: Theme.spacing(12, 0, 6),
 
         '& h2': {
             color: '#363b3f',
@@ -21,12 +22,12 @@ const useStyles = makeStyles((theme) => ({
             fontFamily: 'Lato',
         },
         '& h4': {
-            color: '#ff6f6f',
-            fontFamily: 'Lato',
+            color: '#202124',
+            fontFamily: 'Roboto',
         },
     },
     heroButtons: {
-        marginTop: theme.spacing(4),
+        marginTop: Theme.spacing(4),
     },
     sectionTitle: {
         paddingTop: 100,
@@ -50,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
     },
     outline: {
         textAlign: 'center',
-        backgroundColor: '#00bfa5',
+        background: 'linear-gradient(to right, #4285f4,#4285f4)',
         borderRadius: 2,
         height: 4,
         width: 40,
@@ -74,8 +75,8 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: 100,
     },
     large: {
-        width: theme.spacing(25),
-        height: theme.spacing(25),
+        width: Theme.spacing(25),
+        height: Theme.spacing(25),
         marginBottom: 20,
     },
 }))
@@ -103,19 +104,6 @@ const About = () => {
                             gutterBottom
                         >
                             Juhee Kim
-                        </Typography>
-                        <Typography
-                            component="h5"
-                            variant="h6"
-                            align="center"
-                            color="textSecondary"
-                            paragraph
-                        >
-                            I am a senior student of Bachelor of Science in
-                            Computer Science at the University of Manitoba,
-                            focusing on full stack development for complex
-                            scalable and resilient web/mobile applications with
-                            newest UI/UX and modern web technologies.
                         </Typography>
                         <Typography variant="h5">
                             <div className={classes.centered}>
@@ -152,6 +140,26 @@ const About = () => {
                                 <br />
                             </div>
                         </Typography>
+                        <br />
+                        <Divider />
+                        <br />
+                        <Typography
+                            component="h5"
+                            variant="h6"
+                            align="center"
+                            color="textSecondary"
+                            paragraph
+                        >
+                            I am a senior student of Bachelor of Science in
+                            Computer Science at the University of Manitoba,
+                            focusing on full stack development for complex
+                            scalable and resilient web/mobile applications with
+                            newest UI/UX and modern web technologies.
+                        </Typography>
+                        <br />
+                        <Divider />
+                        <br />
+
                         <div className={classes.heroButtons}>
                             <Grid container spacing={1} justify="center">
                                 <Grid item>
@@ -180,7 +188,9 @@ const About = () => {
                                 className={classes.sectionTitle}
                                 id="experience"
                             >
-                                <Typography variant="h4">Experience</Typography>
+                                <Typography variant="h4">
+                                    EXPERIENCE/ACTIVITY
+                                </Typography>
                                 <div className={classes.centered}>
                                     <div className={classes.outline}></div>
                                 </div>
@@ -193,7 +203,8 @@ const About = () => {
                                     fontSize="6"
                                     paragraph
                                 >
-                                    U of Manitoba Women in Computer Science
+                                    University of Manitoba Women in Computer
+                                    Science
                                     <br />
                                     JUNE 2020 - MAY 2021
                                     <br />
@@ -202,13 +213,44 @@ const About = () => {
                                         cs.umanitoba.ca/~wics/{' '}
                                     </a>
                                 </Typography>
+                                <br />
+                                <Typography variant="h6">
+                                    2020 Winnipeg Open Data Hackathon - Save
+                                    Neighbourhood!
+                                </Typography>
+                                <Typography
+                                    component="h5"
+                                    align="center"
+                                    fontSize="6"
+                                    paragraph
+                                >
+                                    City of Winnipeg, MARCH 2020
+                                    <br />
+                                    <a href="https://engage.winnipeg.ca/opendata/brainstormers/hackathon-ideas/ideas/19023">
+                                        {' '}
+                                        hackathon-ideas/ideas/19023{' '}
+                                    </a>
+                                </Typography>
+                                <br />
+                                <Typography variant="h6">
+                                    CSSA Programming Contest
+                                </Typography>
+                                <Typography
+                                    component="h5"
+                                    align="center"
+                                    fontSize="6"
+                                    paragraph
+                                >
+                                    Computer Science Student Association, U of
+                                    Manitoba, 2019
+                                </Typography>
                             </div>
 
                             <div
                                 className={classes.sectionTitle}
                                 id="education"
                             >
-                                <Typography variant="h4">Education</Typography>
+                                <Typography variant="h4">EDUCATION</Typography>
                                 <div className={classes.centered}>
                                     <div className={classes.outline}></div>
                                 </div>

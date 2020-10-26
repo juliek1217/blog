@@ -1,7 +1,7 @@
-import MasonryPost from './masonry-post';
-import PostGrid from './post-grid';
-import PostMasonry from './post-masonry';
-import TagRow from './tag-row';
+import Blog from './blog'
+import MasonryPost from './masonry-post'
+import PostGrid from './post-grid'
+import PostMasonry from './post-masonry'
+import TagRow from './tag-row'
 
-export { MasonryPost, PostMasonry, PostGrid, TagRow };
-
+export { MasonryPost, PostMasonry, PostGrid, TagRow, Blog }
