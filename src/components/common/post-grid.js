@@ -17,7 +17,8 @@ export default function PostGrid({ posts }) {
 
     useEffect(() => {
         window.scroll({
-            top: 500,
+            //top: 100,
+            top: 0,
             left: 0,
             behavior: 'smooth',
         })

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useRouteMatch } from 'react-router-dom'
 
-const generatePage = page => {
+const generatePage = (page) => {
     const component = () => require(`./pages/${page}`).default
 
     try {
@@ -12,9 +12,9 @@ const generatePage = page => {
     }
 }
 
-export default function PageRenderer () {
+export default function PageRenderer() {
     const {
-        params: {page}
+        params: { page },
     } = useRouteMatch()
 
     return generatePage(page)

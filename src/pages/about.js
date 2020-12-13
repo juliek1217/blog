@@ -194,6 +194,25 @@ const About = () => {
                                 <div className={classes.centered}>
                                     <div className={classes.outline}></div>
                                 </div>
+
+                                <Typography variant="h6">Freelancer</Typography>
+                                <Typography
+                                    component="h5"
+                                    align="center"
+                                    fontSize="6"
+                                    paragraph
+                                >
+                                    Washmall - Ecommerce website front-end
+                                    <br />
+                                    NOVEMBER 2020 - CURRENT
+                                    <br />
+                                    <a href="https://washmall.co.kr/">
+                                        {' '}
+                                        washmall.co.kr{' '}
+                                    </a>
+                                </Typography>
+                                <br />
+
                                 <Typography variant="h6">
                                     WICS Website Coordinator
                                 </Typography>

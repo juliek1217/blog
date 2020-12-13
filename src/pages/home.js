@@ -59,8 +59,8 @@ export default function Home() {
                     &nbsp;&nbsp;Under construction
                 </h1>
                 <h4>
-                    I am currently stuck on my coursework but it will be ready
-                    around Nov. 10th. Stay tuned!
+                    I am currently super busy with my job and final exam but it
+                    will be ready around Dec. 21. Stay tuned!
                 </h4>
                 <br />
                 <br />

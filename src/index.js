@@ -4,9 +4,18 @@ import App from './App'
 import './assets/scss/base.scss'
 import * as serviceWorker from './serviceWorker'
 
+// const cache = new InMemoryCache()
+
+// const client = new ApolloClient({
+//     cache,
+//     link: 'http://localhost:4000/graphql',
+// })
+
 ReactDOM.render(
     <React.StrictMode>
+        {/* <ApolloProvider client={client}> */}
         <App />
+        {/* </ApolloProvider> */}
     </React.StrictMode>,
     document.getElementById('root')
 )

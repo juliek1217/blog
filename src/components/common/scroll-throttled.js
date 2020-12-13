@@ -1,30 +1,31 @@
-import { throttle } from 'lodash';
-import { useEffect, useState } from 'react';
+import { throttle } from 'lodash'
+import { useEffect, useState } from 'react'
 
 function useDocumentScrollThrottled(callback) {
-  const [, setScrollPosition] = useState(0);
-  let previousScrollTop = 0;
+    const [, setScrollPosition] = useState(0)
+    let previousScrollTop = 0
 
-  function handleDocumentScroll() {
-    const { scrollTop: currentScrollTop } = document.documentElement || document.body;
+    function handleDocumentScroll() {
+        const { scrollTop: currentScrollTop } =
+            document.documentElement || document.body
 
-    setScrollPosition(previousPosition => {
-      previousScrollTop = previousPosition;
-      return currentScrollTop;
-    });
+        setScrollPosition((previousPosition) => {
+            previousScrollTop = previousPosition
+            return currentScrollTop
+        })
 
-    callback({ previousScrollTop, currentScrollTop });
-  }
+        callback({ previousScrollTop, currentScrollTop })
+    }
 
-  const handleDocumentScrollThrottled = throttle(handleDocumentScroll, 250);
+    const handleDocumentScrollThrottled = throttle(handleDocumentScroll, 250)
 
-  useEffect(() => {
-    window.addEventListener('scroll', handleDocumentScrollThrottled);
+    useEffect(() => {
+        window.addEventListener('scroll', handleDocumentScrollThrottled)
 
-    return () =>
-      window.removeEventListener('scroll', handleDocumentScrollThrottled);
-      // eslint-disable-next-line
-  }, []);
+        return () =>
+            window.removeEventListener('scroll', handleDocumentScrollThrottled)
+        // eslint-disable-next-line
+    }, [])
 }
 
-export default useDocumentScrollThrottled;
+export default useDocumentScrollThrottled

@@ -2,6 +2,7 @@ CREATE TABLE IF NOT EXISTS {}.blog_posts (
     id INT(12) NOT NULL auto_increment PRIMARY KEY,
     author_id INT(12) NOT NULL,
     title VARCHAR(100) NOT NULL,
+    description VARCHAR(200) NOT NULL,
     text MEDIUMTEXT NOT NULL,
     keyword1 VARCHAR(50) NOT NULL,
     keyword2 VARCHAR(50) NOT NULL,
